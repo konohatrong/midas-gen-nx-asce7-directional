@@ -11,11 +11,13 @@ source/engine lives in the development repo (`midas_API`, folder
 ## Contents
 | Path | What |
 |---|---|
-| `releases/YYYY-MM-DD_vX.Y.Z/` | one folder per release (publish date + version) holding the upload zips — the version history |
+| `releases/YYYY-MM-DD_vX.Y.Z/` | **one folder per version**, named by its first publish date — the version history (rebuilds of the same version reuse their folder) |
 | `releases/…/wind-load-generator-vX.Y.Z.zip` | **Upload this** on MIDAS Marketplace → MyWork |
 | `releases/…/…-no-manifest.zip` | fallback if the host rejects `manifest.json` |
-| `plugin/` | the CURRENT upload file set, unzipped (for inspection/diff) |
 | `validation/` | V&V evidence: `VALIDATION.md` + live campaign run logs |
+
+The plug-in **source** is not duplicated here — it lives only in the dev repo
+(`To midas/wind-load-generator/`); the zips are the release artifact.
 
 ## Features (v2.0.0)
 - Connect → create/refresh tagging Structure Groups (non-destructive) → Preview →
