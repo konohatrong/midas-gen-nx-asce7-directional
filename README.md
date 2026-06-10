@@ -2,8 +2,9 @@
 
 ASCE 7-22 MWFRS (Directional) wind load generator that runs **inside MIDAS GEN NX**
 as a Marketplace plug-in. This repo holds the **release artifacts only**; the
-source/engine lives in the development repo (`midas_API`, folder
-`pilot project/wind load generator/`).
+source/engine lives in the development repo (`midas_API`: engine in
+`pilot project/wind load generator/`, plug-in bundle in
+`To midas/wind-load-generator/source/`).
 
 **Design and Verify by : Peerapat Pinyopojanee, M. Eng**
 **Powered and Coded by : Claude AI**
@@ -17,7 +18,7 @@ source/engine lives in the development repo (`midas_API`, folder
 | `validation/` | V&V evidence: `VALIDATION.md` + live campaign run logs |
 
 The plug-in **source** is not duplicated here — it lives only in the dev repo
-(`To midas/wind-load-generator/`); the zips are the release artifact.
+(`To midas/wind-load-generator/source/`); the zips are the release artifact.
 
 ## Features (v2.0.0)
 - Connect → create/refresh tagging Structure Groups (non-destructive) → Preview →
