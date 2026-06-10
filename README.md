@@ -20,7 +20,7 @@ source/engine lives in the development repo (`midas_API`: engine in
 The plug-in **source** is not duplicated here — it lives only in the dev repo
 (`To midas/wind-load-generator/source/`); the zips are the release artifact.
 
-## Features (v2.0.0)
+## Features (v2.1.0)
 - Connect → create/refresh tagging Structure Groups (non-destructive) → Preview →
   Apply, on the model open in GEN NX (tagged elements only)
 - Roof shapes auto-detected: gable, unequal-pitch gable, monoslope; meshed

@@ -1,5 +1,16 @@
 # Changelog — Wind Load Generator plug-in
 
+## v2.1.0 — 2026-06-11
+**Unified UI** — the plug-in and the desktop tool are now generated from ONE
+shared UI source (same form, same handlers; only the backend adapter differs:
+FastAPI on desktop, MAPI+Pyodide in the plug-in). Feature drift between the
+local tool and the packed plug-in is structurally impossible from this version.
+- Plug-in UI gains the desktop's step-by-step layout, mode notes, and richer
+  status reporting; capability gating hides desktop-only paths (generate,
+  MWFRS-only) instead of forking the page.
+- No engineering changes: same engine, same 58-case set, same calc report
+  (232 offline tests pass; engine identical to the 104/104-validated v2.0.0).
+
 ## v2.0.0 — 2026-06-11
 First Marketplace-ready release.
 - **Fixed: plug-in icon + load failure.** Root cause: `manifest.json` must follow
